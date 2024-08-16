@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千葉と東京の旅</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MS Mincho', serif;
+            font-size: 12px;
+            line-height: 1.4;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 5mm;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown .dropbtn {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 12px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .title {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 12px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .qr-code {
+            display: flex;
+            align-items: center;
+        }
+
+        .qr-code img {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .text-content {
+            width: 25%;
+            font-size: 12px;
+            text-align: justify;
+            color: #333;
+            line-height: 1.4;
+            padding-right: 8px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            max-height: calc(297mm - 20mm);
+        }
+
+        .images-group {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+
+        .image-item {
+            flex: 1 1 calc(20% - 8px);
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            padding: 4px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 140px;
+        }
+
+        .image-item img {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 4px;
+        }
+
+        .image-item p {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="author">ヴ・ミン・チュン</div>
+            <div class="dropdown">
+                <button class="dropbtn">千葉と新宿区の旅</button>
+                <div class="dropdown-content">
+                    <a href="./index.html">一日目：横浜小旅行</a>
+                    <a href="./Hakone.html">二日目：箱根の旅</a>
+                </div>
+            </div>
+            <div class="qr-code">
+                <img src="./Maps-Tokyo.svg" alt="QR Code">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text-content">
+                第三日目に千葉へ行きました。東京ディズニーランドには入れなかったので、千葉の魚市場へ行きましたが、閉まっていました。気を取り直して、寿司の「チョウシマル」で昼食を楽しみました。最新のIoT技術で、タッチパネルで注文でき、鮮度の高い寿司と刺身を堪能しました。
+
+                食後は新宿御苑を訪れました。緑豊かな公園でリラックスし、熱帯植物園や素敵な木造の建物を楽しみました。その後、明治神宮に行き、壮大な鳥居や静かな境内に感動しました。ここで明治天皇の和歌をもらい、日本の文化を深く感じることができました。
+
+                <div class="">
+                    <img src="./Maps-Tokyo.svg" alt="Tokyo Map" width="190" height="190">
+                </div>
+            </div>
+            <div class="images-group">
+                <!-- Nhà hàng sushi Choushimaru -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_041437179.RAW-01.COVER.jpg"
+                        alt="Nhà hàng sushi Choushimaru 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_043035826.RAW-01.COVER.jpg"
+                        alt="Nhà hàng sushi Choushimaru 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_050855234.RAW-01.COVER.jpg"
+                        alt="Nhà hàng sushi Choushimaru 3">
+                    <p>チョウシマルの寿司と注文システム。</p>
+                </div>
+                <!-- Shinjuku Gyoen -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_073758701.RAW-01.COVER.jpg" alt="Shinjuku Gyoen 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_074311187.RAW-01.COVER.jpg" alt="Shinjuku Gyoen 2">
+                    <p>新宿御苑の緑と熱帯植物。</p>
+                </div>
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_075220146.RAW-01.COVER.jpg" alt="Shinjuku Gyoen 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_080031645.RAW-01.COVER.jpg" alt="Shinjuku Gyoen 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_080744786.RAW-01.COVER.jpg" alt="Shinjuku Gyoen 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_080213357.RAW-01.COVER.jpg" alt="Shinjuku Gyoen 2">
+                </div>
+                <!-- Đền Thiên hoàng Minh Trị -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_084213287.RAW-01.COVER.jpg"
+                        alt="Đền Thiên hoàng Minh Trị 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_085116601.RAW-01.COVER.jpg"
+                        alt="Đền Thiên hoàng Minh Trị 2">
+                    <p>明治神宮の静けさと荘厳さ。</p>
+                </div>
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_085600244.RAW-01.COVER.jpg"
+                        alt="Đền Thiên hoàng Minh Trị 3">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_090102598.RAW-01.COVER.jpg"
+                        alt="Đền Thiên hoàng Minh Trị 4">
+                    <img src="./assets/img/Mini-travel/PXL_20240814_090113472.RAW-01.COVER.jpg"
+                        alt="Đền Thiên hoàng Minh Trị 5">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.style.zoom = "170%";
+    </script>
+</body>
+
+</html>

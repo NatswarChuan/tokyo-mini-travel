@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>箱根の旅</title>
+    <style>
+        @page {
+            size: A4 landscape;
+            margin: 10mm;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'MS Mincho', serif;
+            font-size: 12px;
+            line-height: 1.4;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 5mm;
+            box-sizing: border-box;
+            background-color: #ffffff;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 4px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown .dropbtn {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            top: 100%;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 12px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .title {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 12px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .qr-code {
+            display: flex;
+            align-items: center;
+        }
+
+        .qr-code img {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #007bff;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .text-content {
+            width: 25%;
+            font-size: 12px;
+            text-align: justify;
+            color: #333;
+            line-height: 1.4;
+            padding-right: 8px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            max-height: calc(297mm - 20mm);
+        }
+
+        .images-group {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: flex-start;
+            box-sizing: border-box;
+        }
+
+        .image-item {
+            flex: 1 1 calc(20% - 8px);
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            padding: 4px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 140px;
+        }
+
+        .image-item img {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 4px;
+        }
+
+        .image-item p {
+            font-size: 12px;
+            color: #666;
+            line-height: 1.2;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="author">ヴ・ミン・チュン</div>
+            <div class="dropdown">
+                <button class="dropbtn">箱根の旅</button>
+                <div class="dropdown-content">
+                    <a href="./index.html">一日目：横浜小旅行</a>
+                    <a href="./Chiba.html">三日目：千葉と新宿区の旅</a>
+                </div>
+            </div>
+            <div class="qr-code">
+                <img src="./Maps-Hakone.svg" alt="QR Code">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="text-content">
+                次の日、私は箱根の芦ノ湖へと向かいました。箱根湯本駅から芦ノ湖までの6km以上の道を歩きましたが、新鮮な空気と美しい自然景色がこの旅行を快適で印象深いものにしました。途中、箱根赤津屋で冷たいそばを味わい、静かな雰囲気の中での食事は格別でした。
+
+                芦ノ湖に到着した時は、もう夕方でボートを借りる時間がありませんでしたが、夕暮れ時の湖の風景と遠くの壮大な山々がその失望感を補ってくれました。最後に、箱根神社の平和の鳥居で写真を撮るために30分以上待ちましたが、壮大で神聖な風景はその待機時間に見合うものでした。
+
+                <div class="">
+                    <img src="./Maps-Hakone.svg" alt="Hakone Map" width="200" height="200">
+                </div>
+            </div>
+            <div class="images-group">
+                <!-- 箱根赤津屋 -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_050248511.RAW-01.COVER.jpg" alt="箱根赤津屋 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_032613797.LONG_EXPOSURE-01.COVER.jpg" alt="箱根赤津屋 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_043840718.RAW-01.COVER.jpg" alt="箱根赤津屋 3">
+                    <p>箱根赤津屋での冷たいそばの美味しい食事。</p>
+                </div>
+                <!-- 登山 -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_060422844.RAW-01.COVER.jpg" alt="登山 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_063042661.RAW-01.COVER.jpg" alt="登山 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_081630456.RAW-01.COVER.jpg" alt="登山 3">
+                    <p>箱根の山々を登りながら、美しい風景を楽しみました。森林の中のトレッキングは心を癒してくれました。</p>
+                </div>
+                <!-- 芦ノ湖 -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_083423344.NIGHT.RAW-01.COVER.jpg" alt="芦ノ湖 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_083521536.RAW-01.COVER.jpg" alt="芦ノ湖 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_085554728.RAW-01.COVER.jpg" alt="芦ノ湖 3">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_090535146.RAW-01.COVER.jpg" alt="芦ノ湖 4">
+                    <p>芦ノ湖の美しい夕暮れと壮大な山々の景色。</p>
+                </div>
+                <!-- 平和の鳥居 -->
+                <div class="image-item">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_090857259.RAW-01.COVER.jpg" alt="平和の鳥居 1">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_090554703.RAW-01.COVER.jpg" alt="平和の鳥居 2">
+                    <img src="./assets/img/Mini-travel/PXL_20240813_094313840.NIGHT.RAW-01.COVER.jpg" alt="平和の鳥居 3">
+                    <p>箱根神社の平和の鳥居での壮大な風景。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.body.style.zoom = "175%";
+    </script>
+</body>
+
+</html>
